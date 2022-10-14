@@ -1,0 +1,28 @@
+package com.informatorio.demo.controller;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controlador{
+	
+	@GetMapping("/")
+	public String Inicio() {
+		return "Hola clase";
+	}
+	
+	@GetMapping("/inicio5")
+	public String Inicio5() {
+		return "Inicio 5";
+	}
+	
+	@PostMapping("/b")
+	public String Inicio2() {
+		return "Hola clase por post";
+	}
+	
+	
+}

@@ -1,0 +1,39 @@
+/* Crear un ArrayList, agregar 5 números enteros. Luego, agregar un número entero 
+ * al principio de la lista y otro al final. Por último, iterar e imprimir los 
+ * elementos de la lista y el tamaño de la misma (antes y después de agregar a en 
+ * la primera y última posición). */
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListaNumeros{
+	
+	public static void main(String[] args) {
+		
+	List<Integer> numeros = new ArrayList<>();
+	
+	for (int contador =1; contador<=5;contador++) {
+		
+		Scanner leer = new Scanner(System.in);
+        System.out.print("Introduzca un número: ");
+        Integer numero = leer.nextInt();
+        numeros.add(numero);
+		
+	}
+
+	System.out.println("Lista de ciudades preferidas de Argentina");
+	
+	int contador = 1;
+	
+	for (Iterator<String> iterator = ciudades.iterator(); iterator.hasNext();) {
+		
+		String ciudad = (String) iterator.next();
+		System.out.println("#"+ contador + " " + ciudad);
+		contador++;
+		
+	}
+	
+}
+	
+}

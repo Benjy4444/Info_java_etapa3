@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="hola_mundo/|persona/|empleado/|ejecicios1/" kind="src" path=""/>
+	<classpathentry kind="src" path="hola_mundo"/>
+	<classpathentry kind="src" path="persona"/>
+	<classpathentry kind="src" path="empleado"/>
+	<classpathentry kind="src" path="ejecicios1"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

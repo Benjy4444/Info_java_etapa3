@@ -1,0 +1,19 @@
+/* classCrear un ArrayList y cargarlo con tus ciudades favoritas de Argentina, 
+ luego imprimir por pantalla el ranking */
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListaCiudades{
+	
+	List<String> ciudades = new ArrayList<>();
+	
+	ciudades.add("");
+	nombres.add("Bob Esponja");
+	nombres.add("Patricio");
+	nombres.add("Batman");
+
+
+	
+	
+}

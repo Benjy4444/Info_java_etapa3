@@ -1,0 +1,4 @@
+{% block title %} Noticias (Blog) {% endblock title %} {% block content %} Noticias (Blog)
+...Página de inicio de las noticias (blog)...
+{% for post in posts %} {{post.title}} {{post.excerpt}}
+{% endfor %} Inicio del sitio {% endblock content %}

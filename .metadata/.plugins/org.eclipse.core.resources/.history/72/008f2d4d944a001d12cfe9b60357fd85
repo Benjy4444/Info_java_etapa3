@@ -1,0 +1,39 @@
+/*  Dados 2 ArrayList que contienen horas-trabajadas (array1) y valor-por-hora(array2) del resumen 
+ * de carga de horas semanal de un empleado. Se debe generar otra lista que contenga los totales y 
+ * luego imprimir el total final a cobrar. */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class SueldoSemanalEmpleado {
+	
+	public static void main(String[] args) {
+		
+	List<Integer> horas_trabajadas_dias = new ArrayList<>();
+	
+	List<Integer> valor_por_hora = new ArrayList<>();
+	
+	List<Integer> total_por_dias = new ArrayList<>();
+	
+	for (int contador =1; contador<=horas_trabajadas_dia.size();contador++) {
+		
+			int total_dia = horas_trabajadas_dias.get(contador)*valor_por_hora.get(contador);
+			
+			total_por_dias.add(total_dia);
+	}
+
+	
+	System.out.println("Pago por días de la semana: " + total_por_dias);
+	
+	 int suma = total_por_dias.stream().mapToInt(Integer::intValue).sum();;
+	
+	System.out.println("Pago total por semana: " + suma);
+	
+	}
+	
+}
+
+

@@ -1,0 +1,96 @@
+/* Se dispone de una colección de Empleados, de cada empleado se conoce:
+Nombre y Apellido
+DNI
+horasTrabajadas
+valorPorHora
+Todos los empleados están cargados en un Set (HashSet), se desea calcular el sueldo 
+(horasTrabajadas x valorPorHora) de toda esa lista para luego almacenar en un Map (o Diccionario) 
+donde la clave (key) es el dni y el valor (value) es el sueldo calculado.*/
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class SueldoEmpleados {
+	
+    /* private String nombreyapellido;
+    private int dni;
+    private int horasTrabajadas;
+    private int valorPorHora;
+    
+    /* Constuctor por defecto
+    public SueldoEmpleados (){
+        this("", 0, 0, 0);
+    }
+
+    /* Constuctor con parámetros
+    public SueldoEmpleados (String nombreyapellido, int dni, int horasTrabajadas, int valorPorHora){
+        this.nombreyapellido = nombreyapellido;
+        this.dni = dni;
+        this.horasTrabajadas = horasTrabajadas;
+        this.valorPorHora = valorPorHora;
+    }   
+
+    @Override
+    public String toString(){
+        return ("Nombre y apellido: " + this.nombreyapellido)+ " - " + ("DNI: " + String.valueOf(this.dni) + " - " +"Horas trabajadas: " +
+        		String.valueOf(this.horasTrabajadas)) + " - " + ("Valor por hora: " + String.valueOf(this.valorPorHora));
+                
+     } */
+    
+    
+
+	
+	public static void main(String[] args) {
+		
+		Set<String> nombresyapellido = new HashSet<>();
+		
+		Set<Long> dni = new HashSet<>();
+		
+		List<Integer> horasTrabajadas = new ArrayList<>();
+		
+		List<Integer> valorPorHora = new ArrayList<>();
+		
+		Map<Long, String> dniSueldo = new HashMap<Long, String>();
+		
+		String respuesta = "s";
+		int contador = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Carga de datos de empleados: ");
+		
+		while (respuesta.equals("s")) {
+            
+			Scanner leer = new Scanner(System.in);
+        	Scanner leer2 = new Scanner(System.in);
+        		
+
+            System.out.print("Introduzca nombre y apellido: ");
+            String nombreyapellidoEmpleado = leer.nextLine();
+            
+            System.out.print("Introduzca DNI: ");
+            int dniEmpleado = leer.nextInt();
+          
+            System.out.print("Horas trabajadas: ");
+            int horasTrabajadasEmpleado =  leer.nextInt();
+            
+            System.out.print("Valor por hora: ");
+            int valorPorHoraEmpleado =  leer.nextInt();
+
+            System.out.print("¿Desea continuar cargando empleados? (s/n): ");
+            respuesta =  leer2.nextLine();
+
+        }
+
+	}
+	
+}
+
+
+

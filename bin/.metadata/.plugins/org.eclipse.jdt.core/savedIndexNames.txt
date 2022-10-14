@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Usuario\Documents\Info 2022 - Etapa 3 - Especialización en Leguajes de Programación\Java\Proyectos\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2871152645.index
+2885839723.index
+3465856759.index
+2581885573.index
